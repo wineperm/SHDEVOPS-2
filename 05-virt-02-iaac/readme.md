@@ -63,7 +63,8 @@ Error: The requested URL returned error: 404:
 
 ## Ответ
 
-```$ vagrant@server1:~$ sudo docker version && docker compose version
+```
+$ vagrant@server1:~$ sudo docker version && docker compose version
 Client: Docker Engine - Community
  Version:           24.0.7
  API version:       1.43
