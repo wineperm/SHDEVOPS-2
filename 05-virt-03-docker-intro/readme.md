@@ -44,7 +44,7 @@ https://hub.docker.com/repository/docker/wineperm/custom-nginx/general
 
 ## Ответ
 
-https://github.com/wineperm/SHDEVOPS-2/issues/1#issue-2061092425
+https://github.com/wineperm/SHDEVOPS-2/assets/15356046/725c25eb-9f5d-4ee1-a451-2bc1fc4ffab5
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
