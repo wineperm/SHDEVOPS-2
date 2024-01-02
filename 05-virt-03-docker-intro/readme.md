@@ -141,7 +141,7 @@ services:
 
 2. compose.yaml
 
-'''
+```
 version: "3"
 services:
   portainer:
@@ -155,7 +155,7 @@ services:
 include:
    - path: 
        - ./docker-compose.yaml
-'''
+```
 
 3. https://github.com/wineperm/SHDEVOPS-2/assets/15356046/616c1f36-1be5-435e-9669-e6638c8d4452
 
@@ -164,6 +164,7 @@ include:
 7. https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d768233e-c4d8-48d0-af9c-dda91f6cb934 
 
 WARN[0000] Для этого проекта найдены потерянные контейнеры ([task5-portainer-1]). Если вы удалили или переименовали эту службу в своем файле создания, вы можете запустить эту команду с флагом --remove-orphans, чтобы очистить ее.
+
 Система подсказывает что первоначальная структура контейнеров изменилась. 
 
 ---
