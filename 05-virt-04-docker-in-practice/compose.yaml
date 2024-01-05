@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+    
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: web_python
+    restart: on-failure
+    networks:
+      backend: 
+        ipv4_address: 172.20.0.5
+    
+    depends_on:    
+      - reverse-proxy
+      - ingress-proxy
+      - db
+   
+    env_file:
+      - web.env
+   
+        
+  db:
+    image: mysql:8
+    container_name: db_mysql
+    restart: on-failure
+    networks:
+      backend: 
+        ipv4_address: 172.20.0.10
+       
+    depends_on:    
+      - reverse-proxy
+      - ingress-proxy
+   
+    env_file:
+      - db.env
+    
+     
+include:
+   - path: 
+      - ./proxy.yaml
+       
