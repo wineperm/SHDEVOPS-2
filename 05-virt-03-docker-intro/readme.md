@@ -44,7 +44,7 @@ https://hub.docker.com/repository/docker/wineperm/custom-nginx/general
 
 ## Ответ
 
-https://github.com/wineperm/SHDEVOPS-2/issues/1#issue-2061092425
+https://github.com/wineperm/SHDEVOPS-2/assets/15356046/725c25eb-9f5d-4ee1-a451-2bc1fc4ffab5
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
@@ -128,6 +128,7 @@ services:
     ports:
       - "9090:80"
 ```
+
 6. Перейдите на страницу "http://127.0.0.1:9000/#!/2/docker/containers", выберите контейнер с nginx и нажмите на кнопку "inspect". В представлении <> Tree разверните поле "Config" и сделайте скриншот от поля "AppArmorProfile" до "Driver".
 
 7. Удалите файл docker-compose.yaml.  Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите тестовый стенд.
@@ -140,7 +141,7 @@ services:
 
 2. compose.yaml
 
-'''
+```
 version: "3"
 services:
   portainer:
@@ -154,7 +155,7 @@ services:
 include:
    - path: 
        - ./docker-compose.yaml
-'''
+```
 
 3. https://github.com/wineperm/SHDEVOPS-2/assets/15356046/616c1f36-1be5-435e-9669-e6638c8d4452
 
@@ -165,6 +166,7 @@ include:
 WARN[0000] Для этого проекта найдены потерянные контейнеры ([task5-portainer-1]). Если вы удалили или переименовали эту службу в своем файле создания, вы можете запустить эту команду с флагом --remove-orphans, чтобы очистить ее.
 
 Система подсказывает что первоначальная структура контейнеров изменилась. 
+
 ---
 
 ### Правила приема
