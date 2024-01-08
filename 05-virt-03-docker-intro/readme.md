@@ -137,9 +137,9 @@ services:
 
 ## Ответ
 
-1. Путь по умолчанию для файла Compose — compose.yaml (предпочтительный) или compose.yml, который размещается в рабочем каталоге. Compose также поддерживает docker-compose.yaml и docker-compose.yml для обратной совместимости с более ранними версиями. Если оба файла существуют, Compose предпочитает канонический файл compose.yaml.
+1 Путь по умолчанию для файла Compose — compose.yaml (предпочтительный) или compose.yml, который размещается в рабочем каталоге. Compose также поддерживает docker-compose.yaml и docker-compose.yml для обратной совместимости с более ранними версиями. Если оба файла существуют, Compose предпочитает канонический файл compose.yaml.
 
-2. compose.yaml
+2 compose.yaml
 
 ```
 version: "3"
@@ -157,11 +157,11 @@ include:
        - ./docker-compose.yaml
 ```
 
-3. https://github.com/wineperm/SHDEVOPS-2/assets/15356046/616c1f36-1be5-435e-9669-e6638c8d4452
+3 https://github.com/wineperm/SHDEVOPS-2/assets/15356046/616c1f36-1be5-435e-9669-e6638c8d4452
 
-6. https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e1145ff0-6d6c-43bc-83f3-b9e95889e48f
+6 https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e1145ff0-6d6c-43bc-83f3-b9e95889e48f
 
-7. https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d768233e-c4d8-48d0-af9c-dda91f6cb934 
+7 https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d768233e-c4d8-48d0-af9c-dda91f6cb934 
 
 WARN[0000] Для этого проекта найдены потерянные контейнеры ([task5-portainer-1]). Если вы удалили или переименовали эту службу в своем файле создания, вы можете запустить эту команду с флагом --remove-orphans, чтобы очистить ее.
 
