@@ -51,6 +51,7 @@
 ## Ответ
 
 - https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d826c221-d644-4ddc-a09c-a29b1ca56876
+- https://github.com/wineperm/SHDEVOPS-2/blob/main/05-virt-04-docker-in-practice/compose.yaml
 
 ## Задача 4
 1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
