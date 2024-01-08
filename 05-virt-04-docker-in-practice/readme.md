@@ -20,7 +20,8 @@
 
 ## Ответ
 
-https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9aad6e75-d82d-45c4-ae03-dec7a9757835
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9aad6e75-d82d-45c4-ae03-dec7a9757835
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/ba19be74-a27a-42d1-8f45-0a1611840012
 
 ## Задача 2 (*)
 1. Создайте в yandex cloud container registry с именем "test" с помощью "yc tool" . [Инструкция](https://cloud.yandex.ru/ru/docs/container-registry/quickstart/?from=int-console-help)
@@ -28,6 +29,10 @@ https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9aad6e75-d82d-45c4-ae03-d
 3. Соберите и залейте в него образ с python приложением из задания №1.
 4. Просканируйте образ на уязвимости.
 5. В качестве ответа приложите отчет сканирования.
+
+## Ответ
+
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/8a656b6a-9060-4b61-b7b0-1f4375262f5f
 
 ## Задача 3
 1. Создайте файл ```compose.yaml```. Опишите в нем следующие сервисы: 
@@ -45,7 +50,7 @@ https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9aad6e75-d82d-45c4-ae03-d
 
 ## Ответ
 
-https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d826c221-d644-4ddc-a09c-a29b1ca56876
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d826c221-d644-4ddc-a09c-a29b1ca56876
 
 ## Задача 4
 1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
@@ -54,6 +59,21 @@ https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d826c221-d644-4ddc-a09c-a
 4. Зайдите на сайт проверки http подключений, например(или аналогичный): ```https://check-host.net/check-http``` и запустите проверку вашего сервиса ```http://<внешний_IP-адрес_вашей_ВМ>:5000```.
 5. (Необязательная часть) Дополнительно настройте remote ssh context к вашему серверу. Отобразите список контекстов и результат удаленного выполнения ```docker ps -a```
 6. В качестве ответа повторите  sql-запрос и приложите скриншот с данного сервера, bash-скрипт и ссылку на fork-репозиторий.
+
+## Ответ
+
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/5e26a690-3106-4339-855e-b900ddf1954e
+
+```
+#!/bin/bash
+
+cd /opt
+sudo git clone https://github.com/wineperm/shvirtd-example-python.git
+cd /opt/shvirtd-example-python
+sudo docker compose up -d
+```
+
+- https://github.com/wineperm/shvirtd-example-python
 
 ## Задача 5 (*)
 1. Напишите и задеплойте на вашу облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа ```schnitzler/mysqldump``` при помощи ```docker run ...``` команды. Подсказка: "документация образа."
@@ -64,6 +84,9 @@ https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d826c221-d644-4ddc-a09c-a
 ## Задача 6
 Скачайте docker образ ```hashicorp/terraform:latest``` и скопируйте бинарный файл ```/bin/terraform``` на свою локальную машину, используя dive и docker save.
 Предоставьте скриншоты  действий .
+
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/67c4edca-bdf5-4e4b-9207-1f7890ac1961
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/62298011-42b8-41d3-bf0e-53ef12f63c54
 
 ## Задача 6.1 (*)
 Добейтесь аналогичного результата, используя познания  CMD, ENTRYPOINT и docker cp.  
