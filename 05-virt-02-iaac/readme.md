@@ -108,3 +108,48 @@ Docker Compose version v2.21.0
 8. **ВНИМАНИЕ!** Никогда не выкладываете oauth token от облака в git-репозиторий! Утечка секретного токена может привести к финансовым потерям. После выполнения задания обязательно удалите секретные данные из файла mydebian.json и mydebian.json.pkr.hcl. (замените содержимое токена на  "ххххх")
 9. В качестве ответа на задание  загрузите результирующий файл в ваш ЛК.
 
+https://github.com/wineperm/SHDEVOPS-2/assets/15356046/44e53958-aee8-4b16-86e3-0ec7bc7eb566
+
+```
+source "yandex" "yc-task3" {
+  folder_id           = "!!!!!!!!!!!!!!!"
+  source_image_family = "ubuntu-2004-lts"
+  ssh_username        = "ubuntu"
+  use_ipv4_nat        = "true"
+  image_description   = "05-virt-02-iaac"
+  image_name          = "yc-task3"
+  subnet_id           = "!!!!!!!!!!!!!!!"
+  disk_type           = "network-hdd"
+  zone                = "ru-central1-a"
+  token               = "!!!!!!!!!!!!!!!"
+}
+
+build {
+  sources = ["source.yandex.yc-task3"]
+
+  provisioner "shell" {
+    inline = [
+      # Docker
+      "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-keyring.gpg",
+      "echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null>
+      "sudo apt-get update",
+      "sudo apt-get install -y docker-ce containerd.io",
+      "sudo usermod -aG docker $USER",
+      "sudo chmod 666 /var/run/docker.sock",
+      "sudo useradd -m -s /bin/bash -G docker yc-user",
+
+      # Other packages
+      "sudo apt-get install -y htop tmux",
+
+      # Test - Check versions for installed components
+      "echo '=== Tests Start ==='",
+      "docker version",
+      "htop -v",
+      "tmux -V",
+      "echo '=== Tests End ==='"
+    ]
+  }
+
+}
+```
+
