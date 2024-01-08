@@ -29,7 +29,7 @@ Hey, Netology
 
 ## Ответ
 
-https://hub.docker.com/repository/docker/wineperm/custom-nginx/general
+- https://hub.docker.com/repository/docker/wineperm/custom-nginx/general
 
 ## Задача 2
 1. Запустите ваш образ custom-nginx:1.0.0 командой docker run в соответвии с требованиями:
@@ -44,7 +44,7 @@ https://hub.docker.com/repository/docker/wineperm/custom-nginx/general
 
 ## Ответ
 
-https://github.com/wineperm/SHDEVOPS-2/assets/15356046/725c25eb-9f5d-4ee1-a451-2bc1fc4ffab5
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/725c25eb-9f5d-4ee1-a451-2bc1fc4ffab5
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
@@ -64,10 +64,10 @@ https://github.com/wineperm/SHDEVOPS-2/assets/15356046/725c25eb-9f5d-4ee1-a451-2
 
 ## Ответ
 
-3. Когда мы нажимаем Ctrl+C в терминале, мы отправляем SIGINT (сигнал прерывания) в текущий процесс. В большинстве случаев это воспринимается процессом как запрос на завершение. В данном случае, процесс внутри контейнера получает этот сигнал и прекращает свою работу. Это приводит к тому, что контейнер останавливается.
-10. Несоответствие проброшенного порта. Теперь Nginx прослушивает порт 81 внутри контейнера.
-https://github.com/wineperm/SHDEVOPS-2/assets/15356046/01c12d0c-fd9a-4c1d-ac42-99543a82eda0
-https://github.com/wineperm/SHDEVOPS-2/assets/15356046/29939fd9-2a52-4b98-bded-ac5af3281873
+- Когда мы нажимаем Ctrl+C в терминале, мы отправляем SIGINT (сигнал прерывания) в текущий процесс. В большинстве случаев это воспринимается процессом как запрос на завершение. В данном случае, процесс внутри контейнера получает этот сигнал и прекращает свою работу. Это приводит к тому, что контейнер останавливается.
+- Несоответствие проброшенного порта. Теперь Nginx прослушивает порт 81 внутри контейнера.
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/01c12d0c-fd9a-4c1d-ac42-99543a82eda0
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/29939fd9-2a52-4b98-bded-ac5af3281873
 
 ## Задача 4
 
@@ -83,7 +83,7 @@ https://github.com/wineperm/SHDEVOPS-2/assets/15356046/29939fd9-2a52-4b98-bded-a
 
 ## Ответ
 
-https://github.com/wineperm/SHDEVOPS-2/assets/15356046/47075078-a2f7-4a62-b304-777bf0d5b4f6
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/47075078-a2f7-4a62-b304-777bf0d5b4f6
 
 ## Задача 5
 
@@ -137,9 +137,9 @@ services:
 
 ## Ответ
 
-1. Путь по умолчанию для файла Compose — compose.yaml (предпочтительный) или compose.yml, который размещается в рабочем каталоге. Compose также поддерживает docker-compose.yaml и docker-compose.yml для обратной совместимости с более ранними версиями. Если оба файла существуют, Compose предпочитает канонический файл compose.yaml.
+- Путь по умолчанию для файла Compose — compose.yaml (предпочтительный) или compose.yml, который размещается в рабочем каталоге. Compose также поддерживает docker-compose.yaml и docker-compose.yml для обратной совместимости с более ранними версиями. Если оба файла существуют, Compose предпочитает канонический файл compose.yaml.
 
-2. compose.yaml
+- compose.yaml
 
 ```
 version: "3"
@@ -157,15 +157,15 @@ include:
        - ./docker-compose.yaml
 ```
 
-3. https://github.com/wineperm/SHDEVOPS-2/assets/15356046/616c1f36-1be5-435e-9669-e6638c8d4452
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/616c1f36-1be5-435e-9669-e6638c8d4452
 
-6. https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e1145ff0-6d6c-43bc-83f3-b9e95889e48f
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e1145ff0-6d6c-43bc-83f3-b9e95889e48f
 
-7. https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d768233e-c4d8-48d0-af9c-dda91f6cb934 
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d768233e-c4d8-48d0-af9c-dda91f6cb934 
 
-WARN[0000] Для этого проекта найдены потерянные контейнеры ([task5-portainer-1]). Если вы удалили или переименовали эту службу в своем файле создания, вы можете запустить эту команду с флагом --remove-orphans, чтобы очистить ее.
+- WARN[0000] Для этого проекта найдены потерянные контейнеры ([task5-portainer-1]). Если вы удалили или переименовали эту службу в своем файле создания, вы можете запустить эту команду с флагом --remove-orphans, чтобы очистить ее.
 
-Система подсказывает что первоначальная структура контейнеров изменилась. 
+- Система подсказывает что первоначальная структура контейнеров изменилась. 
 
 ---
 
