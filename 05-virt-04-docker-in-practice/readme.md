@@ -87,6 +87,8 @@ sudo docker compose up -d
 Скачайте docker образ ```hashicorp/terraform:latest``` и скопируйте бинарный файл ```/bin/terraform``` на свою локальную машину, используя dive и docker save.
 Предоставьте скриншоты  действий .
 
+## Ответ
+
 - https://github.com/wineperm/SHDEVOPS-2/assets/15356046/67c4edca-bdf5-4e4b-9207-1f7890ac1961
 - https://github.com/wineperm/SHDEVOPS-2/assets/15356046/62298011-42b8-41d3-bf0e-53ef12f63c54
 
