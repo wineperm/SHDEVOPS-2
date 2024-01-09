@@ -75,6 +75,7 @@ sudo docker compose up -d
 ```
 
 - https://github.com/wineperm/shvirtd-example-python
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/362e517d-dfb1-476a-acfb-8b90a1de4b79
 
 ## Задача 5 (*)
 1. Напишите и задеплойте на вашу облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа ```schnitzler/mysqldump``` при помощи ```docker run ...``` команды. Подсказка: "документация образа."
@@ -92,6 +93,11 @@ sudo docker compose up -d
 ## Задача 6.1 (*)
 Добейтесь аналогичного результата, используя познания  CMD, ENTRYPOINT и docker cp.  
 Предоставьте скриншоты  действий .
+
+## Ответ
+
+- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/b3536d16-92ea-492a-82b5-65910b1a6c43
+
 
 ## Задача 6.2 (**)
 Предложите способ извлечь файл из контейнера, используя только команду docker build и любой Dockerfile.  
