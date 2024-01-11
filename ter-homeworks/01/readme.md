@@ -47,15 +47,15 @@
 - personal.auto.tfvars значит, что файл personal.auto.tfvars будет игнорироваться.
 - В любом с расширением .tfstate
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/45e45ab1-1e04-49be-be2c-6a59bf1a4c2c
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/45e45ab1-1e04-49be-be2c-6a59bf1a4c2c)
 - "result": "b4V87vhqtqD1CuNo",
 
 - resource "docker_image" "nginx" {  # Нет второго блока, (uniq_name) уникального названия, задается самостоятельно, распространяется на текущий проект.
 - resource "docker_container" "nginx" {  # Имя может начинаться с буквы или подчеркивания _ и может содержать только буквы, цифры, подчеркивания и тире.
 - name  = "example_${random_password.random_string.result}" # Строка должна содержать классификатор random_password ("random_password" строка 15), имя random_string ("random_string" строка 15) и аргумент "result" cгенерированный случайным образом в зависимости от заданных параметров (строки от 16 до 20).
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/8204fb7e-1ee2-4d85-9b0d-8e0774ead7d1
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/8204fb7e-1ee2-4d85-9b0d-8e0774ead7d1)
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/bd498c48-1592-43fb-8fc4-d565df7275ef
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/bd498c48-1592-43fb-8fc4-d565df7275ef)
 ```
 terraform {
   required_providers {
@@ -97,10 +97,10 @@ resource "docker_container" "nginx" {
 ```
 
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d36508b1-93a2-440d-8eb7-d3c03283ec80
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d36508b1-93a2-440d-8eb7-d3c03283ec80)
 - Опасность в том, что если применить авто-одобрение, то эти изменения будут автоматически приняты и добавлены в сборку. Это может привести к неожиданному изменению кода и возможному нарушению работы приложения. Не стоит использовать в ответственных местах. Удобно использовать при обучении, локальном тестировании сборок.
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/16daa6aa-4531-4c5e-8fa4-c87067845f23
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/16daa6aa-4531-4c5e-8fa4-c87067845f23)
 
 - Образ не удаляется потому что в конфигурационном файле задан аргумент: keep_locally – true, если его сменить на false, то при уничтожении ресурсов с помощью terraform образы тоже удалятся.
 - keep_locally (Boolean) If true, then the Docker image won't be deleted on destroy operation. If this is false, it will delete the image from the docker local storage on destroy operation.   
