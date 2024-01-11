@@ -45,7 +45,7 @@
 - *.tfstate значит что все файлы с расширением tfstate будут игнорироваться.
 - .tfstate. значит что все файлы с расширением tfstate в каталоге .terraform будут игнорироваться.
 - personal.auto.tfvars значит, что файл personal.auto.tfvars будет игнорироваться.
-- храним тут personal.auto.tfvars
+- ```храним тут personal.auto.tfvars```
 
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/45e45ab1-1e04-49be-be2c-6a59bf1a4c2c)
 - "result": "b4V87vhqtqD1CuNo",
