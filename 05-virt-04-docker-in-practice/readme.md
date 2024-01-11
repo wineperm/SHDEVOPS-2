@@ -20,8 +20,8 @@
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9aad6e75-d82d-45c4-ae03-dec7a9757835
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/ba19be74-a27a-42d1-8f45-0a1611840012
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9aad6e75-d82d-45c4-ae03-dec7a9757835)
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/ba19be74-a27a-42d1-8f45-0a1611840012)
 
 ## Задача 2 (*)
 1. Создайте в yandex cloud container registry с именем "test" с помощью "yc tool" . [Инструкция](https://cloud.yandex.ru/ru/docs/container-registry/quickstart/?from=int-console-help)
@@ -32,7 +32,7 @@
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/8a656b6a-9060-4b61-b7b0-1f4375262f5f
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/8a656b6a-9060-4b61-b7b0-1f4375262f5f)
 
 ## Задача 3
 1. Создайте файл ```compose.yaml```. Опишите в нем следующие сервисы: 
@@ -50,7 +50,7 @@
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d826c221-d644-4ddc-a09c-a29b1ca56876
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d826c221-d644-4ddc-a09c-a29b1ca56876)
 - https://github.com/wineperm/SHDEVOPS-2/blob/main/05-virt-04-docker-in-practice/compose.yaml
 
 ## Задача 4
@@ -63,7 +63,7 @@
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/5e26a690-3106-4339-855e-b900ddf1954e
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/5e26a690-3106-4339-855e-b900ddf1954e)
 
 ```
 #!/bin/bash
@@ -74,8 +74,8 @@ cd /opt/shvirtd-example-python
 sudo docker compose up -d
 ```
 
-- https://github.com/wineperm/shvirtd-example-python
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/362e517d-dfb1-476a-acfb-8b90a1de4b79
+- (https://github.com/wineperm/shvirtd-example-python
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/362e517d-dfb1-476a-acfb-8b90a1de4b79)
 
 ## Задача 5 (*)
 1. Напишите и задеплойте на вашу облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа ```schnitzler/mysqldump``` при помощи ```docker run ...``` команды. Подсказка: "документация образа."
@@ -89,8 +89,8 @@ sudo docker compose up -d
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/67c4edca-bdf5-4e4b-9207-1f7890ac1961
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/62298011-42b8-41d3-bf0e-53ef12f63c54
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/67c4edca-bdf5-4e4b-9207-1f7890ac1961)
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/62298011-42b8-41d3-bf0e-53ef12f63c54)
 
 ## Задача 6.1 (*)
 Добейтесь аналогичного результата, используя познания  CMD, ENTRYPOINT и docker cp.  
@@ -98,7 +98,7 @@ sudo docker compose up -d
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/b3536d16-92ea-492a-82b5-65910b1a6c43
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/b3536d16-92ea-492a-82b5-65910b1a6c43)
 
 
 ## Задача 6.2 (**)
