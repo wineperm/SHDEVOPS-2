@@ -132,7 +132,7 @@ resource "docker_container" "nginx" {
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/issues/23#issue-2075922294
+- ![Alt text]https://github.com/wineperm/SHDEVOPS-2/assets/15356046/78fb88cd-da02-4089-956e-4eefb6e95864
 
 ```
 terraform {
