@@ -44,7 +44,7 @@ Hey, Netology
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/725c25eb-9f5d-4ee1-a451-2bc1fc4ffab5
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/725c25eb-9f5d-4ee1-a451-2bc1fc4ffab5)
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
@@ -66,8 +66,8 @@ Hey, Netology
 
 - Когда мы нажимаем Ctrl+C в терминале, мы отправляем SIGINT (сигнал прерывания) в текущий процесс. В большинстве случаев это воспринимается процессом как запрос на завершение. В данном случае, процесс внутри контейнера получает этот сигнал и прекращает свою работу. Это приводит к тому, что контейнер останавливается.
 - Несоответствие проброшенного порта. Теперь Nginx прослушивает порт 81 внутри контейнера.
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/01c12d0c-fd9a-4c1d-ac42-99543a82eda0
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/29939fd9-2a52-4b98-bded-ac5af3281873
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/01c12d0c-fd9a-4c1d-ac42-99543a82eda0)
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/29939fd9-2a52-4b98-bded-ac5af3281873)
 
 ## Задача 4
 
@@ -83,7 +83,7 @@ Hey, Netology
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/47075078-a2f7-4a62-b304-777bf0d5b4f6
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/47075078-a2f7-4a62-b304-777bf0d5b4f6)
 
 ## Задача 5
 
@@ -157,11 +157,11 @@ include:
        - ./docker-compose.yaml
 ```
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/616c1f36-1be5-435e-9669-e6638c8d4452
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/616c1f36-1be5-435e-9669-e6638c8d4452)
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e1145ff0-6d6c-43bc-83f3-b9e95889e48f
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e1145ff0-6d6c-43bc-83f3-b9e95889e48f)
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d768233e-c4d8-48d0-af9c-dda91f6cb934 
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d768233e-c4d8-48d0-af9c-dda91f6cb934) 
 
 - WARN[0000] Для этого проекта найдены потерянные контейнеры ([task5-portainer-1]). Если вы удалили или переименовали эту службу в своем файле создания, вы можете запустить эту команду с флагом --remove-orphans, чтобы очистить ее.
 
