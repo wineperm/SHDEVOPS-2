@@ -112,7 +112,7 @@ Docker Compose version v2.21.0
 
 4. ``` $ yc compute image list ```
 
-https://github.com/wineperm/SHDEVOPS-2/assets/15356046/44e53958-aee8-4b16-86e3-0ec7bc7eb566
+![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/44e53958-aee8-4b16-86e3-0ec7bc7eb566)
 
 ```
 source "yandex" "yc-task3" {
