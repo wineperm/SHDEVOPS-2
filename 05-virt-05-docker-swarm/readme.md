@@ -32,7 +32,7 @@ docker node ls
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/484e4e01-10fb-44f5-889c-d2f187616f14
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/484e4e01-10fb-44f5-889c-d2f187616f14)
 
 ## Задача 3 (*)
 
