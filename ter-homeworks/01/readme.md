@@ -52,7 +52,7 @@
 
 - resource "docker_image" "nginx" {  # Нет второго блока, (uniq_name) уникального названия, задается самостоятельно, распространяется на текущий проект.
 - resource "docker_container" "nginx" {  # Имя может начинаться с буквы или подчеркивания _ и может содержать только буквы, цифры, подчеркивания и тире.
-- name  = "example_${random_password.random_string.result}" # Строка должна содержать классификатор random_password ("random_password" строка 15), имя random_string ("random_string" строка 15) и аргумент "result" cгенерированный случайным образом в зависимости от заданных параметров (строки от 16 до 20).
+- name  = "example_${random_password.random_string.result}" # Строка должна содержать ресурс из классификатора (type) random_password ("random_password" строка 15), имя random_string ("random_string" строка 15) и аргумент "result" cгенерированный случайным образом в зависимости от заданных параметров (строки от 16 до 20).
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/8204fb7e-1ee2-4d85-9b0d-8e0774ead7d1)
 
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/bd498c48-1592-43fb-8fc4-d565df7275ef)
