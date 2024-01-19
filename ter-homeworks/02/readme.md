@@ -336,7 +336,7 @@ variable "vms_resources" {
 выведет второй элемент из списка ``` test_list = ["develop", "staging", "production"]```
 
 - ```> length(["develop", "staging", "production"])```
-3
+```3```
 длина списка ```test_list = ["develop", "staging", "production"]```
 
 - ```> local.test_map.admin```
