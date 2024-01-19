@@ -47,8 +47,8 @@
 
 - Суть ошибки что код пытается запросить у яндекса конфигурацию платформы (ВМ) которую он не предоставляет.
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c098af7a-88bb-4abf-8c66-2d4c9946fe40
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/90d2f743-0e5d-41a8-9049-53560469c722
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c098af7a-88bb-4abf-8c66-2d4c9946fe40)
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/90d2f743-0e5d-41a8-9049-53560469c722)
 
 - preemptible = true. 
 - Прерываемые виртуальные машины — это виртуальные машины, которые могут быть принудительно остановлены в любой момент. Это может произойти в двух случаях:
@@ -152,7 +152,7 @@ variable "vm_web_core_fraction" {
   description = "fraction"
 }
 ```
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/a55da25f-54c5-4320-ac93-a345f190eff0
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/a55da25f-54c5-4320-ac93-a345f190eff0)
 
 ### Задание 3
 
@@ -162,7 +162,7 @@ variable "vm_web_core_fraction" {
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/49f6d97e-2a97-4687-a55d-d7b25e20b434
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/49f6d97e-2a97-4687-a55d-d7b25e20b434)
 
 - vms_platform.tf
 ``` 
@@ -228,7 +228,7 @@ variable "vm_db_vpc_name" {
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/f08ff11f-2bce-460b-b330-c0a81d4b9f30
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/f08ff11f-2bce-460b-b330-c0a81d4b9f30)
 
 ### Задание 5
 
@@ -238,8 +238,8 @@ variable "vm_db_vpc_name" {
 
 ## Ответ
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/309cfdcc-2cd2-4f50-a766-f16218634be0
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c0f675d1-dc54-4f9d-a4f3-594e97af239b
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/309cfdcc-2cd2-4f50-a766-f16218634be0)
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c0f675d1-dc54-4f9d-a4f3-594e97af239b)
 
 ### Задание 6
 
@@ -304,7 +304,7 @@ variable "vms_resources" {
 }
 ```
 
-- https://github.com/wineperm/SHDEVOPS-2/assets/15356046/ba55599c-61ec-43a0-a6ba-06c663c11df1
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/ba55599c-61ec-43a0-a6ba-06c663c11df1)
 ------
 
 ## Дополнительное задание (со звёздочкой*)
