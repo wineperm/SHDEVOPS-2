@@ -341,7 +341,7 @@ variable "vms_resources" {
 
 - > local.test_map.admin
 "John"
-или
+- или
 - >  local.test_map["admin"]
 "John"
 такой командой можно отобразить значение ключа admin из map test_list
