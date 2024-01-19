@@ -332,7 +332,7 @@ variable "vms_resources" {
 ## Ответ
 
 - ```> local.test_list[1]```
-"staging"
+```"staging"```
 выведет второй элемент из списка ``` test_list = ["develop", "staging", "production"]```
 
 - ```> length(["develop", "staging", "production"])```
@@ -340,10 +340,10 @@ variable "vms_resources" {
 длина списка ```test_list = ["develop", "staging", "production"]```
 
 - ```> local.test_map.admin```
-"John"
+```"John"```
 - или
 - ```> local.test_map["admin"]```
-"John"
+```"John"```
 такой командой можно отобразить значение ключа admin из map test_list
 ```
 test_map = {
