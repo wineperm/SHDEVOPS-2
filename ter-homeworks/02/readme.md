@@ -331,18 +331,18 @@ variable "vms_resources" {
 
 ## Ответ
 
-- > local.test_list[1]
+- ```> local.test_list[1]```
 "staging"
 выведет второй элемент из списка ``` test_list = ["develop", "staging", "production"]```
 
-- > length(["develop", "staging", "production"])
+- ```> length(["develop", "staging", "production"])```
 3
 длина списка ```test_list = ["develop", "staging", "production"]```
 
-- > local.test_map.admin
+- ```> local.test_map.admin```
 "John"
 - или
-- >  local.test_map["admin"]
+- ```> local.test_map["admin"]```
 "John"
 такой командой можно отобразить значение ключа admin из map test_list
 ```
@@ -351,7 +351,7 @@ test_map = {
     user  = "Alex"
   }
 ```
-- >  "${local.test_map["admin"]} is ${keys(local.test_map)[0]} for ${local.test_list[2]} server based on OS ${local.servers.production.image} with ${local.servers.production["cpu"]} v${keys(local.servers.develop)[0]}, ${local.servers.production["ram"]} ${keys(local.servers.production)[3]} and ${length(local.servers.production["disks"])} virtual ${keys(local.servers.develop)[1]}"
+- ```>  "${local.test_map["admin"]} is ${keys(local.test_map)[0]} for ${local.test_list[2]} server based on OS ${local.servers.production.image} with ${local.servers.production["cpu"]} v${keys(local.servers.develop)[0]}, ${local.servers.production["ram"]} ${keys(local.servers.production)[3]} and ${length(local.servers.production["disks"])} virtual ${keys(local.servers.develop)[1]}"```
 
 "John is admin for production server based on OS ubuntu-20-04 with 10 vcpu, 40 ram and 4 virtual disks"
 
