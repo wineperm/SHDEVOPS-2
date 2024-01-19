@@ -337,7 +337,7 @@ variable "vms_resources" {
 
 - > length(["develop", "staging", "production"])
 3
-длинна списка ```test_list = ["develop", "staging", "production"]```
+длина списка ```test_list = ["develop", "staging", "production"]```
 
 - > local.test_map.admin
 "John"
