@@ -374,6 +374,7 @@ output "info" {
   ]
 }
 ```
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/99fda21d-0f89-483e-8198-910d5466b684)
 
 ### Задание 6* (необязательное)
 
