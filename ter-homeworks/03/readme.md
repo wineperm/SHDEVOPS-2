@@ -350,20 +350,25 @@ resource "null_resource" "web_hosts_provision" {
 ## Ответ
 
 ```
-output "vm_for_each_and_count" {
-  value = [
+output "info" {
+  value = [[for server in yandex_compute_instance.web : {
+    fqdn = server.fqdn,
+    id   = server.id,
+    name = server.name
+    }
+    ],
     [
-      for i in yandex_compute_instance.web : {
-        name = i.name
-        id   = i.id
-        fqdn = i.fqdn
+      for server in yandex_compute_instance.db : {
+        fqdn = server.fqdn,
+        id   = server.id,
+        name = server.name
       }
     ],
     [
-      for i in yandex_compute_instance.db : {
-        name = i.name
-        id   = i.id
-        fqdn = i.fqdn
+      for server in [yandex_compute_instance.storage-vm] : {
+        fqdn = server.fqdn,
+        id   = server.id,
+        name = server.name
       }
     ]
   ]

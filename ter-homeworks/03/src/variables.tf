@@ -24,7 +24,7 @@ variable "public_key" {
   type = map(any)
   default = {
     serial-port-enable = "1"
-    ssh-keys           = "!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    ssh-keys           = "!!!!!!!!!!!!!!!!!!!!!!!"
   }
 }
 variable "vpc_name" {
