@@ -38,6 +38,10 @@
 
 Приложите скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud или скриншот отказа в предоставлении доступа к preview-версии.
 
+## Ответ
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/f6fcb041-6cbd-4534-9788-5be43ec6e789)
+
 ------
 
 ### Задание 2
@@ -56,12 +60,169 @@ variable "each_vm" {
 
 ------
 
+## Ответ
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/b64b0d4c-ce9d-448a-9616-3224c1777c41)
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/10b018e2-a3a7-4834-a969-0ff5886e9cf1)
+
+- count-vm.tf
+```
+resource "yandex_compute_instance" "web" {
+  name        = "web-${count.index + 1}"
+  platform_id = var.vm_web_standard-v2
+
+  count = 2
+
+  resources {
+    cores         = var.vms_resources.web.cores
+    memory        = var.vms_resources.web.memory
+    core_fraction = var.vms_resources.web.core_fraction
+  }
+
+  boot_disk {
+    initialize_params {
+      image_id = data.yandex_compute_image.db_ubuntu-2004-lts.image_id
+      type     = var.vm_web_network-disk.web.type
+      size     = var.vm_web_network-disk.web.size
+    }
+  }
+```
+```
+network_interface {
+    subnet_id          = yandex_vpc_subnet.develop.id
+    security_group_ids = [yandex_vpc_security_group.example.id]
+    nat                = true
+
+  }
+```
+
+- for_each-vm.tf
+```
+resource "yandex_compute_instance" "db" {
+  for_each    = { for vm in var.db : vm.vm_name => vm }
+  name        = each.value.vm_name
+  platform_id = each.value.platform
+
+  resources {
+    cores         = each.value.cores
+    memory        = each.value.memory
+    core_fraction = each.value.core_fraction
+  }
+
+  boot_disk {
+    initialize_params {
+      image_id = data.yandex_compute_image.web_ubuntu-2004-lts.image_id
+      type     = each.value.type
+      size     = each.value.disk
+    }
+  }
+```
+```
+variable "db" {
+  type = list(object({
+    vm_name       = string
+    cores         = number
+    memory        = number
+    core_fraction = number
+    disk          = number
+    type          = string
+    platform      = string
+  }))
+  default = [
+    {
+      vm_name       = "main"
+      cores         = 2
+      memory        = 4
+      core_fraction = 20
+      disk          = 8
+      type          = "network-ssd"
+      platform      = "standard-v1"
+    },
+    {
+      vm_name       = "replica"
+      cores         = 4
+      memory        = 2
+      core_fraction = 50
+      disk          = 5
+      type          = "network-hdd"
+      platform      = "standard-v2"
+    }
+  ]
+}
+```
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/2d3a6130-e896-41cc-b23c-84862564101f)
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/7c26544f-0dbc-42ad-a25d-468487252982)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/8a611131-5bd0-4c3d-ba3b-bf0f514ece12)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/392e6e78-cf08-4345-ac0d-3f7fabd5cbfe)
+
 ### Задание 3
 
 1. Создайте 3 одинаковых виртуальных диска размером 1 Гб с помощью ресурса yandex_compute_disk и мета-аргумента count в файле **disk_vm.tf** .
 2. Создайте в том же файле **одиночную**(использовать count или for_each запрещено из-за задания №4) ВМ c именем "storage"  . Используйте блок **dynamic secondary_disk{..}** и мета-аргумент for_each для подключения созданных вами дополнительных дисков.
 
 ------
+
+## Ответ
+- disk_vm.tf
+```
+resource "yandex_compute_disk" "storage_disk" {
+  count = 3
+  name  = "disk-${count.index}"
+  type  = var.vm_web_network-disk.web.type
+  zone  = var.default_zone
+  size  = 1
+}
+```
+```
+resource "yandex_compute_instance" "storage" {
+  name        = "storage"
+  platform_id = var.vm_web_standard-v2
+  zone        = var.default_zone
+
+  resources {
+    cores         = var.vms_resources.web.cores
+    memory        = var.vms_resources.web.memory
+    core_fraction = var.vms_resources.web.core_fraction
+  }
+
+  boot_disk {
+    initialize_params {
+      image_id = data.yandex_compute_image.db_ubuntu-2004-lts.image_id
+    }
+  }
+
+  dynamic "secondary_disk" {
+    for_each = yandex_compute_disk.storage_disk
+
+    content {
+      disk_id     = secondary_disk.value.id
+      device_name = "secondary-disk-${secondary_disk.key + 1}"
+    }
+  }
+
+  metadata = {
+    serial-port-enable = var.public_key.serial-port-enable
+    ssh-keys           = "ubuntu:${local.ssh_public_key}"
+    sensitive          = true
+  }
+
+  scheduling_policy {
+    preemptible = true
+  }
+
+  network_interface {
+    subnet_id = yandex_vpc_subnet.develop.id
+    nat       = true
+  }
+
+  allow_stopping_for_update = true
+}
+```
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/5c19659b-8854-4c1d-b3ef-744fd861beb5)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/7236760c-8f54-48d5-a6ea-3f6934a81d27)
 
 ### Задание 4
 
@@ -85,6 +246,74 @@ storage ansible_host=<внешний ip-адрес> fqdn=<полное доме�
 ```
 Пример fqdn: ```web1.ru-central1.internal```(в случае указания имени ВМ); ```fhm8k1oojmm5lie8i22a.auto.internal```(в случае автоматической генерации имени ВМ зона изменяется). ужную вам переменную найдите в документации провайдера или terraform console.
 4. Выполните код. Приложите скриншот получившегося файла. 
+
+## Ответ
+- ansible.tf
+```
+resource "local_file" "hosts_cfg" {
+  content = templatefile("${path.module}/hosts.tftpl",
+
+    {
+      webservers = yandex_compute_instance.web,
+      databases  = yandex_compute_instance.db,
+      storage    = [yandex_compute_instance.storage-vm]
+  })
+
+  filename = "${abspath(path.module)}/hosts.cfg"
+}
+
+
+resource "null_resource" "web_hosts_provision" {
+  #Ждем создания инстанса
+  depends_on = [yandex_compute_instance.web]
+
+  #Добавление ПРИВАТНОГО ssh ключа в ssh-agent
+  provisioner "local-exec" {
+    command = "eval $(ssh-agent -s) | ssh-add ~/.ssh/id_ed25519"
+  }
+
+  #Костыль!!! Даем ВМ 60 сек на первый запуск. Лучше выполнить это через wait_for port 22 на стороне ansible
+  # В случае использования cloud-init может потребоваться еще больше времени
+  provisioner "local-exec" {
+    command = "sleep 60"
+  }
+
+  #Запуск ansible-playbook
+  provisioner "local-exec" {
+    command     = "export ANSIBLE_HOST_KEY_CHECKING=False; ansible-playbook -i ${abspath(path.module)}/hosts.cfg ${abspath(path.module)}/test.yml"
+    on_failure  = continue #Продолжить выполнение terraform pipeline в случае ошибок
+    environment = { ANSIBLE_HOST_KEY_CHECKING = "False" }
+    #срабатывание триггера при изменении переменных
+  }
+  triggers = {
+    always_run        = "${timestamp()}"                         #всегда т.к. дата и время постоянно изменяются
+    playbook_src_hash = file("${abspath(path.module)}/test.yml") # при изменении содержимого playbook файла
+    ssh_public_key    = local.ssh_public_key                     # при изменении переменной
+  }
+
+}
+```
+-hosts.tftpl
+```
+[webservers]
+
+ %{~ for i in webservers ~}
+ ${i["name"]}   ansible_host=${i["network_interface"][0]["nat_ip_address"]} fqdn=${i["fqdn"]}
+ %{~ endfor ~}
+
+[databases]
+
+%{~ for i in databases ~}
+ ${i["name"]}   ansible_host=${i["network_interface"][0]["nat_ip_address"]} fqdn=${i["fqdn"]}
+ %{~ endfor ~}
+
+[storage]
+
+ %{~ for i in storage ~}
+ ${i["name"]}   ansible_host=${i["network_interface"][0]["nat_ip_address"]} fqdn=${i["fqdn"]}
+ %{~ endfor ~}
+```
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/0e0be816-8e98-4f2d-b8c6-eb419832219c)
 
 Для общего зачёта создайте в вашем GitHub-репозитории новую ветку terraform-03. Закоммитьте в эту ветку свой финальный код проекта, пришлите ссылку на коммит.   
 **Удалите все созданные ресурсы**.
@@ -118,6 +347,29 @@ storage ansible_host=<внешний ip-адрес> fqdn=<полное доме�
 
 ------
 
+## Ответ
+
+```
+output "vm_for_each_and_count" {
+  value = [
+    [
+      for i in yandex_compute_instance.web : {
+        name = i.name
+        id   = i.id
+        fqdn = i.fqdn
+      }
+    ],
+    [
+      for i in yandex_compute_instance.db : {
+        name = i.name
+        id   = i.id
+        fqdn = i.fqdn
+      }
+    ]
+  ]
+}
+```
+
 ### Задание 6* (необязательное)
 
 1. Используя null_resource и local-exec, примените ansible-playbook к ВМ из ansible inventory-файла.
@@ -148,5 +400,4 @@ storage ansible_host=<внешний ip-адрес> fqdn=<полное доме�
 
 * задание выполнено частично или не выполнено вообще,
 * в логике выполнения заданий есть противоречия и существенные недостатки. 
-
 
