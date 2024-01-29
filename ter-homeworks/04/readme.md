@@ -108,6 +108,7 @@ module "vpc_dev" {
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/55d06c20-8da7-4493-b9fc-cb10f195bf6a)
 
 ```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -151,9 +152,11 @@ No modules.
 | <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | n/a |
 | <a name="output_vpc_name"></a> [vpc\_name](#output\_vpc\_name) | n/a |
 <!-- END_TF_DOCS -->
+
 ```
 
 ```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -196,6 +199,7 @@ No modules.
 
 No outputs.
 <!-- END_TF_DOCS -->
+
 ```
 
 ### Задание 3
