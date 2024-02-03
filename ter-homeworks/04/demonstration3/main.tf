@@ -3,7 +3,7 @@ data "vault_generic_secret" "vault_example" {
   path = "secret/example"
 }
 output "vault_example" {
-  value = nonsensitive(data.vault_generic_secret.vault_example.data.1) #функция nonsensitive позволяет узнать значение sensitive данных
+  value = nonsensitive(data.vault_generic_secret.vault_example.data) #функция nonsensitive позволяет узнать значение sensitive данных
 }
 
 #содержимое секретное. поглядеть можно через консоль

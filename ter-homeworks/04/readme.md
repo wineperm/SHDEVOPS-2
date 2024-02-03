@@ -249,6 +249,38 @@ module "vpc_dev" {
 1. Используя готовый yandex cloud terraform module и пример его вызова(examples/simple-bucket): https://github.com/terraform-yc-modules/terraform-yc-s3 .
 Создайте и не удаляйте для себя s3 бакет размером 1 ГБ(это бесплатно), он пригодится вам в ДЗ к 5 лекции.
 
+## Ответ
+
+- main.tf 
+```
+resource "yandex_iam_service_account" "sa" {
+  folder_id = var.folder_id
+  name      = "tf-test-sa"
+}
+
+// Назначение роли сервисному аккаунту
+resource "yandex_resourcemanager_folder_iam_member" "sa-editor" {
+  folder_id = var.folder_id
+  role      = "storage.editor"
+  member    = "serviceAccount:${yandex_iam_service_account.sa.id}"
+}
+
+// Создание статического ключа доступа
+resource "yandex_iam_service_account_static_access_key" "sa-static-key" {
+  service_account_id = yandex_iam_service_account.sa.id
+  description        = "static access key for object storage"
+}
+
+// Создание бакета с использованием ключа
+resource "yandex_storage_bucket" "test" {
+  access_key = yandex_iam_service_account_static_access_key.sa-static-key.access_key
+  secret_key = yandex_iam_service_account_static_access_key.sa-static-key.secret_key
+  bucket     = "wineperm"
+  max_size   = 1073741824
+}
+```
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/1d099934-5134-4e24-9994-8f30b5d44d36)
+
 ### Задание 7*
 
 1. Разверните у себя локально vault, используя docker-compose.yml в проекте.
@@ -277,8 +309,73 @@ terraform console: >nonsensitive(data.vault_generic_secret.vault_example.data.<�
 ```
 5. Попробуйте самостоятельно разобраться в документации и записать новый секрет в vault с помощью terraform. 
 
+## Ответ
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/965a0952-bc05-41a7-acf2-16ff8f8e375f)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/f412ee35-f7bd-44b2-9062-0e992f77b1a1)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/22fd233b-39bf-4b34-98ae-6c1f694d9e44)
+
+- main.tf
+```
+resource "random_password" "azuresecrets" {
+  length  = 32
+  special = true
+  count   = length(var.secret_keys)
+}
+
+resource "vault_generic_secret" "azuresecrets" {
+  path      = "secret/netology_shdevops-2"
+  count     = length(var.secret_keys)
+  data_json = <<EOT
+    {
+    "${var.secret_keys[0]}": "${random_password.azuresecrets.0.result}"
+  }
+    EOT
+}
+```
+
+- variables.tf
+```
+# Vault URL
+variable "vault_url" {
+  description = "Vault URL"
+  type        = string
+  default     = "http://192.168.56.11:8200"
+}
+
+# Vault Token
+variable "vault_token" {
+  default     = "education"
+  description = "Vault Token"
+  type        = string
+}
+
+#--Resource Groups
+variable "secret_keys" {
+  description = "Keys (Names) For Secrets"
+  type        = list(string)
+  default     = ["ter-homeworks/04-z7"]
+}
+```
+
+- provider.tf
+```
+provider "vault" {
+  address         = var.vault_url
+  skip_tls_verify = false
+  token           = var.vault_token
+}
+```
+
 ### Задание 8*
 Попробуйте самостоятельно разобраться в документаци и с помощью terraform remote state разделить root модуль на два отдельных root-модуля: создание VPC , создание ВМ . 
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/922d4f4b-ed25-44dc-b459-db5d0d4957e2)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c142a333-298f-40fc-9f80-df8abaff85c5)
+
 
 ### Правила приёма работы
 
