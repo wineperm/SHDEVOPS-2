@@ -372,8 +372,6 @@ provider "vault" {
 ### Задание 8*
 Попробуйте самостоятельно разобраться в документаци и с помощью terraform remote state разделить root модуль на два отдельных root-модуля: создание VPC , создание ВМ . 
 
-- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/922d4f4b-ed25-44dc-b459-db5d0d4957e2)
-
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c142a333-298f-40fc-9f80-df8abaff85c5)
 
 
