@@ -24,27 +24,27 @@
 
 ## Ответ
 
-- 1. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/59a93a56-b24b-41a2-80ee-78fce1bd529b) 
+-1. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/59a93a56-b24b-41a2-80ee-78fce1bd529b) 
 
 ``` some_fact` - "msg": 12 ```
 
-- 2. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/5fac32cb-0d35-43b6-87c1-25653b15875b)
+-2. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/5fac32cb-0d35-43b6-87c1-25653b15875b)
 
-- 3. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/2b4b5da7-322a-4680-8ca1-9adf3e3a8bb4)
+-3. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/2b4b5da7-322a-4680-8ca1-9adf3e3a8bb4)
 
-- 4. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/03511154-07e4-4b02-b2f1-0c2f38a03744)
+-4. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/03511154-07e4-4b02-b2f1-0c2f38a03744)
 
 ``` some_fact` - [centos7] => "msg": "el" ```
 ``` some_fact` - [ubuntu] => "msg": "deb" ```
 
-- 5-6. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/3716e9da-97a1-4a9c-b857-462848c7b28c)
+-5-6. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/3716e9da-97a1-4a9c-b857-462848c7b28c)
 
-- 7-8. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/3eaf0754-c81f-471a-b183-ff31c979e44c)
-- 7-8v2. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/41028864-b9e0-4b44-a7a0-e361271045f6)
+-7-8. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/3eaf0754-c81f-471a-b183-ff31c979e44c)
+-7-8v2. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/41028864-b9e0-4b44-a7a0-e361271045f6)
 
-- 9. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9382d301-4d7f-49b1-b550-a8b40c1c6771)
+-9. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9382d301-4d7f-49b1-b550-a8b40c1c6771)
 
-- 10-11. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d10b02da-9cdb-4015-922b-d7979d08fd99)
+-10-11. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d10b02da-9cdb-4015-922b-d7979d08fd99)
 
 ## Необязательная часть
 
@@ -57,15 +57,15 @@
 
 ## Ответ
 
-- 1. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/5e4d7442-51d7-4662-af09-2e52b5204f93)
+-1. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/5e4d7442-51d7-4662-af09-2e52b5204f93)
 
-- 2. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/efacb85c-0000-478f-a375-3ffa3ca70cec)
+-2. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/efacb85c-0000-478f-a375-3ffa3ca70cec)
 
-- 3. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/585e8724-bdac-4f2c-a32f-7fa1e4b640ec)
+-3. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/585e8724-bdac-4f2c-a32f-7fa1e4b640ec)
 
-- 4. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/dbaf5f7d-f2a5-4c96-b8f8-b821d66bbe06)
+-4. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/dbaf5f7d-f2a5-4c96-b8f8-b821d66bbe06)
 
-- 5. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/ecdb3880-f0db-46ad-ab4c-afd79ff6cea4)
+-5. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/ecdb3880-f0db-46ad-ab4c-afd79ff6cea4)
 
 - bash.sh
 ```
