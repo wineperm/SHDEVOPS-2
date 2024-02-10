@@ -5,6 +5,5 @@ clickhouse:
       ansible_host: 158.160.104.217
       ansible_user: qwerty
       ansible_ssh_private_key_file: /home/vagrant/.ssh/id_ed25519
-
       
        
