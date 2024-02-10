@@ -30,7 +30,7 @@
 
 -8. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/2b312181-3d6d-4d27-aad2-be626b031371)
 
-[README.md](SHDEVOPS-2/mnt-homeworks/08-ansible-02-playbook/playbook/README.md)
+[README.md](https://github.com/wineperm/SHDEVOPS-2/blob/6f39d8de154a57a14eb096045cbaa7483126c8cf/mnt-homeworks/08-ansible-02-playbook/playbook/README.md)
 
 
 ---
