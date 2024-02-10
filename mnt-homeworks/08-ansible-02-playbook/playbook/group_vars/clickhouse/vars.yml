@@ -4,3 +4,7 @@ clickhouse_packages:
   - clickhouse-client
   - clickhouse-server
   - clickhouse-common-static
+
+vector_version: "0.35.0"
+directory_save: "/home/qwerty/vector"
+sample_templates: "mnt-homeworks/08-ansible-02-playbook-SHDEVOPS-2-KLS(wineperm)"

@@ -34,3 +34,41 @@
       register: create_db
       failed_when: create_db.rc != 0 and create_db.rc !=82
       changed_when: create_db.rc == 0
+- name: Install Vector
+  hosts: clickhouse
+  tags: 
+    - vector
+  handlers:
+    - name: Start vector service
+      become: true
+      ansible.builtin.service:
+        name: vector.service
+        state: restarted
+        tags: 
+  tasks:
+    - name: Create a directory if it does not exist
+      ansible.builtin.file:
+        path: "{{ directory_save }}"
+        state: directory
+        tags: 
+    - name: Get vector distrib
+      ansible.builtin.get_url:
+        url: "https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-1.x86_64.rpm"
+        dest: "{{ directory_save }}/vector-{{ vector_version }}-1.x86_64.rpm"
+        tags: 
+    - name: Install vector packages
+      become: true
+      ansible.builtin.yum:
+        name:
+          - "{{ directory_save }}/vector-{{ vector_version }}-1.x86_64.rpm"
+      notify: Start vector service
+      tags: 
+        - vector_install
+    - name: Template a file to /etc/vector/vector.yaml
+      become: true
+      ansible.builtin.template:
+        src: ./templates/config.yml.j2
+        dest: /etc/vector/vector.yaml
+      notify: Start vector service
+      tags: 
+        - vector_template

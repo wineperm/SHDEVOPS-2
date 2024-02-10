@@ -20,6 +20,19 @@
 9. Подготовьте README.md-файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги. Пример качественной документации ansible playbook по [ссылке](https://github.com/opensearch-project/ansible-playbook). Так же приложите скриншоты выполнения заданий №5-8
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-02-playbook` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 
+## Ответ
+
+-5. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/5e75a93c-0d80-445e-b24e-246d3c7f2229)
+
+-6. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/475b983e-81a3-4573-9cf8-bfbb482368eb)
+
+-7. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/cca48fb4-26a5-4853-93e0-21debc881309)
+
+-8. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/2b312181-3d6d-4d27-aad2-be626b031371)
+
+[README.md](mnt-homeworks/08-ansible-02-playbook/playbook/README.md)
+
+
 ---
 
 ### Как оформить решение задания
