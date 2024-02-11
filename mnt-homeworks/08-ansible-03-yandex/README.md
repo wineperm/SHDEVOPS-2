@@ -3,7 +3,11 @@
 ## Подготовка к выполнению
 
 1. Подготовьте в Yandex Cloud три хоста: для `clickhouse`, для `vector` и для `lighthouse`.
-2. Репозиторий LightHouse находится [по ссылке](https://github.com/VKCOM/lighthouse).
+2. Репозиторий находится [по ссылке](https://github.com/VKCOM/lighthouse).
+
+## Ответ
+
+-1. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/94078586-b42c-477f-b0fa-148174aebe42)
 
 ## Основная часть
 
@@ -18,6 +22,17 @@
 9. Подготовьте README.md-файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-03-yandex` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 
+## Ответ 
+
+-5. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e423c105-7978-47a1-a27e-f2557c1392a7)
+
+-6. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9f639e87-1768-4f40-a6f3-2fa0ab867e7c)
+
+-7. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/f24868af-dae3-41d9-84ae-d14471e130af)
+
+-8. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c1d6adc0-92ca-4f27-8f44-bbfd207ea1ad)
+
+[README.md]()
 ---
 
 ### Как оформить решение задания
