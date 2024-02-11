@@ -33,6 +33,7 @@
 -8. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c1d6adc0-92ca-4f27-8f44-bbfd207ea1ad)
 
 [README.md](https://github.com/wineperm/SHDEVOPS-2/blob/d11d482250d8466043cb43ab502bc297fc29554e/mnt-homeworks/08-ansible-03-yandex/playbook/README.md)
+
 ---
 
 ### Как оформить решение задания
