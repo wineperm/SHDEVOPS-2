@@ -32,7 +32,7 @@
 
 -8. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c1d6adc0-92ca-4f27-8f44-bbfd207ea1ad)
 
-[README.md]()
+[README.md](cd)
 ---
 
 ### Как оформить решение задания
