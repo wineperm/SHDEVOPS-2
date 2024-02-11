@@ -1,4 +1,4 @@
-# Ansible-playbook - установка Clickhouse - Vector - LightHouse
+#  Ansible-playbook - установка Clickhouse - Vector - LightHouse
 
 ## Устанавливаемое программное обеспечение:
 
