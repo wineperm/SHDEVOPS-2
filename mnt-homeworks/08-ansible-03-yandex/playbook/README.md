@@ -20,14 +20,14 @@ clickhouse_packages:
   - clickhouse-server
   - clickhouse-common-static
 ```
-##  Изменяемые переменные /playbook/group_vars/lighthouse/lighthouse.yml
+##  Изменяемые переменные /playbook/group_vars/lighthouse/vars.yml
 ```
 lighthouse_vcs: https://github.com/VKCOM/lighthouse.git
 lighthouse_location_dir: /home/qwerty/lighthouse
 lighthouse_access_log_name: lighthouse_access
 nginx_user_name: root
 ```
-##  Изменяемые переменные /playbook/group_vars/vector/vector.yml
+##  Изменяемые переменные /playbook/group_vars/vector/vars.yml
 ```
 vector_url: https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-1.x86_64.rpm
 vector_version: 0.21.1
