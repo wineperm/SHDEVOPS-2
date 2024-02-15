@@ -24,13 +24,19 @@
 
 ## Ответ 
 
--5. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e423c105-7978-47a1-a27e-f2557c1392a7)
+-5. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/7f6838fa-c44c-4b83-b0ec-f6d189138dfe)
 
--6. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9f639e87-1768-4f40-a6f3-2fa0ab867e7c)
+-6. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/dfa0b1ac-7f18-48e0-9985-7c4799d8bfdc)
 
--7. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/f24868af-dae3-41d9-84ae-d14471e130af)
+-7. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/7ea57061-d12d-47f8-a1f7-1a310858f4b1)
 
--8. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c1d6adc0-92ca-4f27-8f44-bbfd207ea1ad)
+-8. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/652f11ac-bcf9-4457-9733-3ed0a6cb5d10)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/67b26850-8230-463d-b809-104a09ef4572) 
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/73a09811-db9f-4ea1-b3c1-f5f42f79a2af)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/623013cc-168d-4684-896b-c17f43f255e7)
 
 [README.md](https://github.com/wineperm/SHDEVOPS-2/blob/d11d482250d8466043cb43ab502bc297fc29554e/mnt-homeworks/08-ansible-03-yandex/playbook/README.md)
 
