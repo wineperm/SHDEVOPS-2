@@ -38,7 +38,7 @@
 
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/623013cc-168d-4684-896b-c17f43f255e7)
 
-[README.md](https://github.com/wineperm/SHDEVOPS-2/blob/d11d482250d8466043cb43ab502bc297fc29554e/mnt-homeworks/08-ansible-03-yandex/playbook/README.md)
+[README.md](https://github.com/wineperm/SHDEVOPS-2/blob/29cdfa8919132d5b5b74bb3647baf72b0592c365/mnt-homeworks/08-ansible-03-yandex/playbook/README.md)
 
 ---
 
