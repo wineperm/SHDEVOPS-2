@@ -1,0 +1,4 @@
+git tag -a 0.0.1 -m "name"
+git push --follow-tags
+git tag
+git tag --delete v1.1.0
