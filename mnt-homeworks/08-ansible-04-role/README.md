@@ -37,6 +37,19 @@
 10. Выложите playbook в репозиторий.
 11. В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
 
+## Ответ
+
+- 1-2. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/f56429dc-825a-4d2d-9c6b-c86ac0537591)
+
+- 3. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/753f7d84-accc-4f77-beb7-5c8c31e31de7)
+
+- 8. ```$ git tag -a 0.0.1 -m "lighthouse-role"``` 
+     ```$ git push --follow-tags```
+     ```$ git tag -a 0.0.1 -m "vector-role"``` 
+     ```$ git push --follow-tags```
+
+
+
 ---
 
 ### Как оформить решение задания
