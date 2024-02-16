@@ -54,7 +54,47 @@ git tag -a 0.0.1 -m "vector-role"
 git push --follow-tags 
 ```
 
+- [LightHouse-role](git@github.com:wineperm/lighthouse-role.git)
 
+- [Vector-role](git@github.com:wineperm/vector-role.git)
+
+- [playbook.yml](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/08-ansible-04-role/playbook/playbook.yml)
+```
+---
+- name: Install clickhouse
+  hosts: clickhouse-01
+  roles: 
+    - clickhouse
+
+- name: Install lighthouse
+  hosts: lighthouse-01
+  roles: 
+    - lighthouse-role
+
+- name: Install vector
+  hosts: vector-01
+  roles:
+    - vector-role
+```
+
+- [requirements.yml](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/08-ansible-04-role/playbook/requirements.yml)
+```
+---
+     - src: git@github.com:AlexeySetevoi/ansible-clickhouse.git
+       scm: git
+       version: "1.13"
+       name: clickhouse
+
+     - src: git@github.com:wineperm/lighthouse-role.git
+       scm: git
+       version: "0.0.1"
+       name: lighthouse-role
+
+     - src: git@github.com:wineperm/vector-role.git
+       scm: git
+       version: "0.0.1"
+       name: vector-role
+```
 
 ---
 
