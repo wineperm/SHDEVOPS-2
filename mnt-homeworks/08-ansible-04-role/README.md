@@ -45,8 +45,11 @@
 
 - 8 . 
       ```$ git tag -a 0.0.1 -m "lighthouse-role" 
+      
       $ git push --follow-tags
+      
       $ git tag -a 0.0.1 -m "vector-role" 
+      
       $ git push --follow-tags```
 
 
