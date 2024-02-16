@@ -54,9 +54,9 @@ git tag -a 0.0.1 -m "vector-role"
 git push --follow-tags 
 ```
 
-- [LightHouse-role](git@github.com:wineperm/lighthouse-role.git)
+- [LightHouse-role](https://github.com/wineperm/lighthouse-role.git)
 
-- [Vector-role](git@github.com:wineperm/vector-role.git)
+- [Vector-role](https://github.com/wineperm/vector-role.git)
 
 - [playbook.yml](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/08-ansible-04-role/playbook/playbook.yml)
 ```
