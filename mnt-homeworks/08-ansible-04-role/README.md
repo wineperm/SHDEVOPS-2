@@ -45,11 +45,11 @@
 
 - 8 . 
 ```
-git tag -a 0.0.1 -m "lighthouse-role" 
+git tag -a 0.0.2 -m "lighthouse-role" 
       
 git push --follow-tags
       
-git tag -a 0.0.1 -m "vector-role" 
+git tag -a 0.0.2 -m "vector-role" 
       
 git push --follow-tags 
 ```
@@ -87,12 +87,12 @@ git push --follow-tags
 
      - src: git@github.com:wineperm/lighthouse-role.git
        scm: git
-       version: "0.0.1"
+       version: "0.0.2"
        name: lighthouse-role
 
      - src: git@github.com:wineperm/vector-role.git
        scm: git
-       version: "0.0.1"
+       version: "0.0.2"
        name: vector-role
 ```
 
