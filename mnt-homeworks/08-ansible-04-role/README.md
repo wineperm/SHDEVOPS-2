@@ -95,6 +95,11 @@ git push --follow-tags
        version: "0.0.2"
        name: vector-role
 ```
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/8e11a94a-4794-4da7-9eb0-00dd7668efdc)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/b4287029-6561-4899-b666-3dec0429d69e)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/68460acf-87e8-4687-8baa-9181df411e1f)
 
 ---
 
