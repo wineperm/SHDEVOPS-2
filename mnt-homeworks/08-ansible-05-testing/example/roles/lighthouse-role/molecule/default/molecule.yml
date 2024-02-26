@@ -1,0 +1,37 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+lint: |
+  ansible-lint .
+  yamllint .
+platforms:
+  - name: centos8
+    image: docker.io/pycontribs/centos:8
+    pre_build_image: true
+  - name: debian
+    image: docker.io/pycontribs/debian:latest
+    pre_build_image: true
+  - name: oraclelinux8
+    image: ghcr.io/oracle/oraclelinux8-python:3.6-oracledb-20240207
+    pre_build_image: true
+  - name: centos7
+    image: docker.io/pycontribs/centos:7
+    pre_build_image: true
+  - name: ununtu
+    image: docker.io/pycontribs/ubuntu:latest
+    pre_build_image: true
+  - name: fedora
+    image: docker.io/pycontribs/fedora
+    pre_build_image: true
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
+scenario:
+  test_sequence:
+    - destroy
+    - create
+    - converge
+    - destroy

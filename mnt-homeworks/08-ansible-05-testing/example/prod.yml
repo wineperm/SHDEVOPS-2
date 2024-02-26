@@ -1,0 +1,23 @@
+---
+clickhouse:
+  hosts:
+    clickhouse-01:
+      ansible_host: 158.160.98.63
+      ansible_ssh_user: qwerty
+      ansible_ssh_private_key_file: /home/vagrant/.ssh/id_ed25519
+      
+lighthouse:
+  hosts:
+    lighthouse-01:
+      ansible_host: 158.160.53.134
+      ansible_ssh_user: qwerty
+      ansible_ssh_private_key_file: /home/vagrant/.ssh/id_ed25519
+      
+vector:
+  hosts:
+    vector-01:
+      ansible_host: 158.160.36.191
+      ansible_ssh_user: qwerty
+      ansible_ssh_private_key_file: /home/vagrant/.ssh/id_ed25519
+
+
