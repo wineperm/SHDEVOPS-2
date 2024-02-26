@@ -89,6 +89,8 @@
 
 [vector-role/tag/0.1.4](https://github.com/wineperm/vector-role/releases/tag/v0.1.4)
 
+[vector-role]https://github.com/wineperm/vector-role
+
 ## Необязательная часть
 
 1. Проделайте схожие манипуляции для создания роли LightHouse.
