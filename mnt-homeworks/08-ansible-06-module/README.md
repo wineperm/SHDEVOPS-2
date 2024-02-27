@@ -12,6 +12,10 @@
 8. Если все шаги прошли успешно — выйдите из виртуального окружения `deactivate`.
 9. Ваше окружение настроено. Чтобы запустить его, нужно находиться в директории `ansible` и выполнить конструкцию `. venv/bin/activate && . hacking/env-setup`.
 
+## Ответ
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/66f73c41-7800-4cce-a91c-66895d820a23)
+
 ## Основная часть
 
 Ваша цель — написать собственный module, который вы можете использовать в своей role через playbook. Всё это должно быть собрано в виде collection и отправлено в ваш репозиторий.
@@ -200,6 +204,8 @@ if __name__ == '__main__':
 -16. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e044af31-f819-46ac-82b2-102fdfc8a812)
 
 [collection](https://github.com/wineperm/my_own_collection)
+
+[tar.gz архив](https://github.com/wineperm/SHDEVOPS-2/tree/main/mnt-homeworks/08-ansible-06-module/z14)
 
 ## Необязательная часть
 
