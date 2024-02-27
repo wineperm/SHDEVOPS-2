@@ -1,0 +1,8 @@
+{
+  "ANSIBLE_MODULE_ARGS": {
+    "name": "08-ansible-06-module",
+    "path": "/tmp/netology/",
+    "content": "KLS (permwine)",
+    "force": false
+  }
+}

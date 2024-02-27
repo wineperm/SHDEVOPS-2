@@ -195,7 +195,7 @@ if __name__ == '__main__':
 
 ## Ответ
 
--4. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/93702226-e460-4e7a-85a7-33a5ba864677)
+-4. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c3935941-eeec-4a9b-bd4c-3f393cc91764)
 
 -6. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/1d76059e-094f-40f2-b32d-a08987d26f4b)
 
