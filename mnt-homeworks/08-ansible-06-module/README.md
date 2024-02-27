@@ -197,7 +197,8 @@ if __name__ == '__main__':
 
 -4. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c3935941-eeec-4a9b-bd4c-3f393cc91764)
 
--6. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/1d76059e-094f-40f2-b32d-a08987d26f4b)
+-6. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/abba5cbe-4910-44eb-ad5b-3e23512b7361)
+-6-1.![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/1d76059e-094f-40f2-b32d-a08987d26f4b)
 
 -15. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d8fd6d0c-c22a-4de4-8162-fe3e78b22b31)
 
