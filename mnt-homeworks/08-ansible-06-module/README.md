@@ -156,6 +156,7 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+
 Или возьмите это наполнение [из статьи](https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html#creating-a-module).
 
 **Шаг 3.** Заполните файл в соответствии с требованиями Ansible так, чтобы он выполнял основную задачу: module должен создавать текстовый файл на удалённом хосте по пути, определённом в параметре `path`, с содержимым, определённым в параметре `content`.
@@ -187,6 +188,18 @@ if __name__ == '__main__':
 **Шаг 16.** Запустите playbook, убедитесь, что он работает.
 
 **Шаг 17.** В ответ необходимо прислать ссылки на collection и tar.gz архив, а также скриншоты выполнения пунктов 4, 6, 15 и 16.
+
+## Ответ
+
+-4. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/93702226-e460-4e7a-85a7-33a5ba864677)
+
+-6. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/1d76059e-094f-40f2-b32d-a08987d26f4b)
+
+-15. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d8fd6d0c-c22a-4de4-8162-fe3e78b22b31)
+
+-16. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e044af31-f819-46ac-82b2-102fdfc8a812)
+
+[collection](https://github.com/wineperm/my_own_collection)
 
 ## Необязательная часть
 

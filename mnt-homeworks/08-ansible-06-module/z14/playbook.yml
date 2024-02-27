@@ -1,0 +1,6 @@
+---
+- name: my_own_module
+  gather_facts: false
+  hosts: localhost
+  roles:
+    - my_own_module
