@@ -52,6 +52,12 @@
 
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/86986e40-8f70-4d64-99ea-d10d4aaf560a)
 
+[bug.xml](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-01-intro/bug.xml)
+
+[othertasks.xml](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-01-intro/othertasks.xml)
+
+[scrum.xml](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-01-intro/SCRUM.xml)
+
 ---
 
 ### Как оформить решение задания
