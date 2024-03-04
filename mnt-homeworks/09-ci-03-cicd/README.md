@@ -53,7 +53,7 @@
 
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e4e4c342-8b9b-42bb-9fc2-0a631e086e36)
 
-[maven-metadata.xml]#############
+[maven-metadata.xml](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-03-cicd/maven-metadata.xml)
 
 ### Знакомство с Maven
 
@@ -81,7 +81,7 @@ $ export PATH=$PATH:$(pwd)
 
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/90e5e3a4-dac3-4f60-a8ea-8d327b443982)
 
-[pom.xml]##############
+[pom.xml](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-03-cicd/mvn/pom.xml)
 
 ---
 
