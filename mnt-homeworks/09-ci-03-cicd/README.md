@@ -8,7 +8,7 @@
 4. Запустите playbook, ожидайте успешного завершения.
 5. Проверьте готовность SonarQube через [браузер](http://localhost:9000).
 6. Зайдите под admin\admin, поменяйте пароль на свой.
-7.  Проверьте готовность Nexus через [бразуер](http://localhost:8081).
+7. Проверьте готовность Nexus через [бразуер](http://localhost:8081).
 8. Подключитесь под admin\admin123, поменяйте пароль, сохраните анонимный доступ.
 
 ## Знакомоство с SonarQube
@@ -25,21 +25,35 @@
 8. Запустите анализатор повторно — проверьте, что QG пройдены успешно.
 9. Сделайте скриншот успешного прохождения анализа, приложите к решению ДЗ.
 
+## Ответ
+
+`$ sudo ln -s /home/vagrant/SHDEVOPS-2/mnt-homeworks/09-ci-03-cicd/infrastructure/sonar-scanner-5.0.1.3006-linux/bin/sonar-scanner /usr/bin/sonar-scanner`
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/31961645-a88f-4252-a9ef-128e2984eaba)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/b7b4c686-3de3-4001-8e0a-bef5b715395f)
+
 ## Знакомство с Nexus
 
 ### Основная часть
 
 1. В репозиторий `maven-public` загрузите артефакт с GAV-параметрами:
 
- *    groupId: netology;
- *    artifactId: java;
- *    version: 8_282;
- *    classifier: distrib;
- *    type: tar.gz.
-   
+- groupId: netology;
+- artifactId: java;
+- version: 8_282;
+- classifier: distrib;
+- type: tar.gz.
+
 2. В него же загрузите такой же артефакт, но с version: 8_102.
 3. Проверьте, что все файлы загрузились успешно.
 4. В ответе пришлите файл `maven-metadata.xml` для этого артефекта.
+
+## Ответ
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e4e4c342-8b9b-42bb-9fc2-0a631e086e36)
+
+[maven-metadata.xml]#############
 
 ### Знакомство с Maven
 
@@ -57,6 +71,17 @@
 2. Запустите команду `mvn package` в директории с `pom.xml`, ожидайте успешного окончания.
 3. Проверьте директорию `~/.m2/repository/`, найдите ваш артефакт.
 4. В ответе пришлите исправленный файл `pom.xml`.
+
+## Ответ
+
+```
+$ pwd
+$ export PATH=$PATH:$(pwd)
+```
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/90e5e3a4-dac3-4f60-a8ea-8d327b443982)
+
+[pom.xml]##############
 
 ---
 
