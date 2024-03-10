@@ -1,0 +1,30 @@
+pipeline {
+    agent {
+  label 'ansible'
+    }
+    stages {
+        stage('Git Clone') {
+            steps {
+                dir('/opt/jenkins_agent/workspace/Declarative Pipeline Job/vector-role') {
+                git 'https://github.com/wineperm/vector-role.git'
+                }
+            }
+        }
+        stage('Install Another') {
+            steps {
+                sh "pip3 install molecule==3.5.2 molecule-docker"
+                sh "pip3 install --upgrade requests==2.26.0"
+                sh "ansible-galaxy collection install community.docker"
+            }
+        }
+        stage('Run Molecule Test') {
+            steps {
+                dir('/opt/jenkins_agent/workspace/Declarative Pipeline Job/vector-role') {
+                sh 'pwd'
+                sh 'ls -lah'
+                sh 'molecule test'
+                }
+            }
+        }
+    }
+}
