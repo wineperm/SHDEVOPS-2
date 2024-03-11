@@ -108,7 +108,7 @@
         executable: pip3
         name:
           - selinux
-          - ansible<3.0
+          - ansible
         state: present
     - name: Reinstall Selinux
       become_user: root
@@ -146,4 +146,3 @@
       until: install_agent is succeeded
       retries: 10
       timeout: 10
-
