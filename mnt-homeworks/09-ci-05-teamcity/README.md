@@ -31,6 +31,28 @@
 18. Проверьте, что конфигурация в репозитории содержит все настройки конфигурации из teamcity.
 19. В ответе пришлите ссылку на репозиторий.
 
+## Ответ
+
+-2. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/60551ac3-a1b9-4413-b4ee-c4013e3a5124)
+
+-3. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/ee6164a3-ac77-4612-897e-07a04bcd5747)
+
+-4. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/10403673-7cc1-4b57-a823-c2b749b9496d)
+
+-5. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/f09a6f22-c072-4185-ab2e-6eb829a905ea)
+
+-7. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/949c5aa7-24b6-4945-a8a7-d9108f549850)
+
+-9. ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/42835c1f-52eb-4223-80fe-8703da0163a0)
+
+-16 ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/6ed2fb6f-bc89-4887-9d81-239c0da69085)
+
+[Welcomer.java](https://github.com/wineperm/example-teamcity/blob/master/src/main/java/plaindoll/Welcomer.java)
+
+[WelcomerTest.java](https://github.com/wineperm/example-teamcity/blob/master/src/test/java/plaindoll/WelcomerTest.java)
+
+[example-teamcity](https://github.com/wineperm/example-teamcity)
+
 ---
 
 ### Как оформить решение задания
