@@ -73,7 +73,7 @@ pipeline {
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/7510ad70-c428-4239-a842-9de845622236)
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/cf370b52-3123-45b5-8aa0-30cbc013ef3c)
 
--7. [ScriptedJenkinsfile](mnt-homeworks/09-ci-04-jenkins/ScriptedJenkinsfile)
+-7. [ScriptedJenkinsfile](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-04-jenkins/ScriptedJenkinsfile)
 
 -8. [Vector-role](https://github.com/wineperm/vector-role)
 
