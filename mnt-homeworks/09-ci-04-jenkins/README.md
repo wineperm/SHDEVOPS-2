@@ -75,11 +75,11 @@ pipeline {
 
 -7. [ScriptedJenkinsfile](mnt-homeworks/09-ci-04-jenkins/ScriptedJenkinsfile)
 
--8. `[Vector-role](https://github.com/wineperm/vector-role)`
+-8. [Vector-role](https://github.com/wineperm/vector-role)
 
-`[Declarative Pipeline](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-04-jenkins/DeclarativePipeline)`
+[Declarative Pipeline](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-04-jenkins/DeclarativePipeline)
 
-`[Scripted Pipeline](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-04-jenkins/ScriptedJenkinsfile)`
+[Scripted Pipeline](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-04-jenkins/ScriptedJenkinsfile)
 
 ## Необязательная часть
 
