@@ -121,13 +121,13 @@ build&deploy:
 
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/c3aa3975-e7d9-4724-b949-9ccc18688c56)
 
-[gitlab.com]https://gitlab.com/permwine/09-ci-06-gitlab
+[gitlab.com](https://gitlab.com/permwine/09-ci-06-gitlab)
 
-[.gitlab-ci.yml]
+[.gitlab-ci.yml](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-06-gitlab/.gitlab-ci.yml)
 
-[Dockerfile]
+[Dockerfile](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-06-gitlab/Dockerfile)
 
-[log pipelines]
+[log pipelines](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/09-ci-06-gitlab/job.txt)
 
 ## Итог
 
