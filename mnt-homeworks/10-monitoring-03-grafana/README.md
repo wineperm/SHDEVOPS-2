@@ -10,7 +10,7 @@
 
 За дополнительными материалами можете обратиться в официальную документацию grafana и prometheus.
 
-В решении к домашнему заданию также приведите все конфигурации, скрипты, манифесты, которые вы 
+В решении к домашнему заданию также приведите все конфигурации, скрипты, манифесты, которые вы
 использовали в процессе решения задания.
 
 **При решении задания 3** вы должны самостоятельно завести удобный для вас канал нотификации, например, Telegram или email, и отправить туда тестовые события.
@@ -25,6 +25,10 @@
 1. Зайдите в веб-интерфейс grafana, используя авторизационные данные, указанные в манифесте docker-compose.
 1. Подключите поднятый вами prometheus, как источник данных.
 1. Решение домашнего задания — скриншот веб-интерфейса grafana со списком подключенных Datasource.
+
+## Ответ
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d44aebae-fb4d-408d-be58-8f73f2e06cc4)
 
 ## Задание 2
 
@@ -43,15 +47,39 @@
 
 Для решения этого задания приведите promql-запросы для выдачи этих метрик, а также скриншот получившейся Dashboard.
 
+## Ответ
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9078e246-e63f-4a28-9225-8cac617ba2e0)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/7936a64e-233c-4e52-8c9f-f62911c061d9)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/869b3867-5cad-432f-ac48-bc2f3b4f226a)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d831dbdd-eebf-4b66-b65b-0995aefab3e4)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e63b9576-301d-4b1d-9254-348dfb3fe3ac)
+
 ## Задание 3
 
 1. Создайте для каждой Dashboard подходящее правило alert — можно обратиться к первой лекции в блоке «Мониторинг».
 1. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
 
+## Ответ
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/f849c0f4-9fbf-4b26-9ebf-eae2168919ee)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/f2a8e627-5aad-478d-8812-dc94cb1d3f5c)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/111e404b-232b-4466-83c2-55907a1cf498)
+
+- ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9773839d-522f-4593-9e36-f4ad079d5d6c)
+
 ## Задание 4
 
 1. Сохраните ваш Dashboard.Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
 1. В качестве решения задания приведите листинг этого файла.
+
+[model.json]
 
 ---
 
