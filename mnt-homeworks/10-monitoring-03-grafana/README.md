@@ -51,11 +51,29 @@
 
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/9078e246-e63f-4a28-9225-8cac617ba2e0)
 
+```
+100 - (avg by (instance)(irate(node_cpu_seconds_total{job="nodeexporter",mode="idle"}[5m])) * 100)
+```
+
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/7936a64e-233c-4e52-8c9f-f62911c061d9)
+
+```
+node_load1{instance="nodeexporter:9100", job="nodeexporter"}
+node_load5{instance="nodeexporter:9100", job="nodeexporter"}
+node_load15{instance="nodeexporter:9100", job="nodeexporter"}
+```
 
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/869b3867-5cad-432f-ac48-bc2f3b4f226a)
 
+```
+node_memory_MemAvailable_bytes{instance="nodeexporter:9100"}
+```
+
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/d831dbdd-eebf-4b66-b65b-0995aefab3e4)
+
+```
+node_filesystem_avail_bytes{device="/dev/sda2", fstype="ext4", instance="nodeexporter:9100", job="nodeexporter", mountpoint="/"}
+```
 
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/e63b9576-301d-4b1d-9254-348dfb3fe3ac)
 
@@ -79,7 +97,7 @@
 1. Сохраните ваш Dashboard.Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
 1. В качестве решения задания приведите листинг этого файла.
 
-[model.json]
+[model.json](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/10-monitoring-03-grafana/model.json)
 
 ---
 
