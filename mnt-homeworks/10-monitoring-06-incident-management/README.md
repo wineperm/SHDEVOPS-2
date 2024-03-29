@@ -11,6 +11,8 @@
 
 ## Ответ
 
+[post-mortem.md](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/10-monitoring-06-incident-management/post-mortem.md)
+
 Дата: 21 октября 2018 года
 
 Проблема: Массовое удаление веб-хуков, повреждение репозиториев и потеря коммитов.
