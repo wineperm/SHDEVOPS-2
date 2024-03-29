@@ -50,7 +50,7 @@ Free Cloud account имеет ограничения:
 
 - ![Alt text](https://github.com/wineperm/SHDEVOPS-2/assets/15356046/2a576786-5154-4371-b530-710362f22497)
 
-[main.py]()
+[main.py](https://github.com/wineperm/SHDEVOPS-2/blob/main/mnt-homeworks/10-monitoring-05-sentry/main.py)
 
 ## Задание повышенной сложности
 
