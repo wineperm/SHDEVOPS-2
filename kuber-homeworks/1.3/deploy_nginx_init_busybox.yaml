@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-nginx-init-busybox
+  labels:
+    app: nginx-init-busybox
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-init-busybox
+  template:
+    metadata:
+      labels:
+        app: nginx-init-busybox
+    spec:
+      initContainers:
+        - name: busybox
+          image: busybox
+          command: ["sleep", "60"]
+      containers:
+        - name: nginx
+          image: nginx:1.14.2
+          ports:
+            - name: http-nginx
+              containerPort: 80

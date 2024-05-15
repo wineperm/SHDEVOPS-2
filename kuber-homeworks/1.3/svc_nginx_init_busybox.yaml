@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-nginx-init-busybox
+spec:
+  selector:
+    app: nginx-init-busybox
+  ports:
+    - name: http-nginx
+      protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: ClusterIP
