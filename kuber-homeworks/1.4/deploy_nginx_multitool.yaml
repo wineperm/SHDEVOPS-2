@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-multitool-deployment
+  name: deploy-nginx-multitool
 spec:
   replicas: 3
   selector:
