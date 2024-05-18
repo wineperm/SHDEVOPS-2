@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-multitool
+spec:
+  containers:
+    - name: network-multitool
+      image: wbitt/network-multitool
+      ports:
+        - name: http-multitool
+          containerPort: 8080
