@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-buzybox-multitool
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deploy-buzybox-multitool
+  template:
+    metadata:
+      labels:
+        app: deploy-buzybox-multitool
+    spec:
+      containers:
+        - name: busybox
+          image: busybox
+          command: ["/bin/sh"]
+          args:
+            [
+              "-c",
+              "while true; do echo $(date) >> /data/output.txt; sleep 5; done",
+            ]
+          volumeMounts:
+            - name: pv-volume
+              mountPath: /data
+        - name: network-multitool
+          image: wbitt/network-multitool
+          command: ["/bin/sh"]
+          args: ["-c", "while true; do cat /data/output.txt; sleep 5; done"]
+          volumeMounts:
+            - name: pv-volume
+              mountPath: /data
+      volumes:
+        - name: pv-volume
+          persistentVolumeClaim:
+            claimName: pvc-volume
