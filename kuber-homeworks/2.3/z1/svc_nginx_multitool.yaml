@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-nginx-multitool
+spec:
+  selector:
+    app: nginx-multitool
+  ports:
+    - name: http-nginx
+      port: 80
+      targetPort: 80
+    - name: http-multitool
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer
